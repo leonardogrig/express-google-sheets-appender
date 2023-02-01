@@ -1,4 +1,4 @@
-# appendToSheets
+# express-google-sheets-appender
 This code creates an Express.js server that listens on port 5000 and exposes a single endpoint /addRow that accepts a POST request with a JSON payload.
 
 When a POST request is made to the endpoint, the server retrieves Google Sheets API credentials and client, and checks the Class Data sheet's first column (A) to see if the first value of the values payload array is already present. If it is, the server returns a 404 response with a message of "Ticker already present.".
